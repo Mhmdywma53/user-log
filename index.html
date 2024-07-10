@@ -1,177 +1,896 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1877675170045008"
-     crossorigin="anonymous"></script>
-    <meta name="google-site-verification" content="Tgq_t6h8jXzQHmXaxVicp05lTdH9e3TNXEjeuhqWif8" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي الاسطوري</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        nav {
-            background-color: #333;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-        }
-        nav ul li a:hover {
-            background-color: #575757;
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .buttons-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .buttons-container button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            outline: none;
-        }
-        .btn1 {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .btn2 {
-            background-color: #008CBA;
-            color: white;
-            border-radius: 5px;
-        }
-        .btn3 {
-            background-color: #f44336;
-            color: white;
-            border-radius: 20px;
-        }
-        .btn4 {
-            background-color: #e7e7e7;
-            color: black;
-            border: 2px solid #ddd;
-        }
-        .btn5 {
-            background-color: transparent;
-            color: #555;
-            border: 2px solid #555;
-        }
-        .btn6 {
-            background-color: #555;
-            color: white;
-            border: 2px solid #555;
-        }
-        .btn7 {
-            background-color: #ff9800;
-            color: white;
-            border-radius: 0;
-        }
-        .btn8 {
-            background-color: #9c27b0;
-            color: white;
-            border: 2px solid #9c27b0;
-        }
-        .btn9 {
-            background-color: #00bcd4;
-            color: white;
-            border-radius: 50%;
-        }
-        .btn10 {
-            background-color: #cddc39;
-            color: black;
-            border: 2px dashed #cddc39;
-        }
-    </style>
+    <title>شرح لغة بايثون</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>مرحبا بسيط</h1>
+        <i id="theme-toggle" class="theme-icon fas fa-moon"></i>
+        <h1>شرح لغة بايثون</h1>
     </header>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1877675170045008"
-     crossorigin="anonymous"></script>
-<!-- one -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-1877675170045008"
-         data-ad-slot="7323875411"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
     
-    <nav>
-        <ul>
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#about">عن الموقع</a></li>
-            <li><a href="#contact">اتصل بنا</a></li>
-        </ul>
-    </nav>
     <main>
-        <section id="home">
-            <h2>الرئيسية</h2>
-            <p>هذا هو الصفحة الرئيسية لموقعي البسيط.</p>
+        <img src="https://www.python.org/static/community_logos/python-logo.png" alt="شعار بايثون" style="width: 300px;">
+        <!-- الأقسام الأساسية -->
+        <section class="content-section">
+            <h2>المتغيرات</h2>
+            <p>المتغيرات هي أماكن تخزين البيانات. يمكن استخدامها لتخزين القيم وتغييرها خلال تشغيل البرنامج.</p>
+            <pre><code id="code-variables">
+# إنشاء متغيرات
+a = 10
+b = 20.5
+name = "أحمد"
+
+# طباعة المتغيرات
+print(a)
+print(b)
+print(name)
+            </code></pre>
+            <button class="copy-btn" data-target="code-variables">نسخ الكود</button>
         </section>
-        <section id="about">
-            <h2>عن الموقع</h2>
-            <p>هنا يمكنك كتابة نبذة عن الموقع.</p>
+
+        <section class="content-section">
+            <h2>الشروط</h2>
+            <p>الشروط تستخدم لاتخاذ قرارات في البرنامج بناءً على حالات معينة.</p>
+            <pre><code id="code-conditions">
+# استخدام الشروط
+x = 10
+if x > 5:
+    print("x أكبر من 5")
+else:
+    print("x ليس أكبر من 5")
+            </code></pre>
+            <button class="copy-btn" data-target="code-conditions">نسخ الكود</button>
         </section>
-        <section id="contact">
-            <h2>اتصل بنا</h2>
-            <p>إذا كان لديك أي استفسارات، لا تتردد في التواصل معنا.</p>
+
+        <section class="content-section">
+            <h2>الحلقات</h2>
+            <p>الحلقات تستخدم لتنفيذ كود معين مراراً وتكراراً حتى يتم استيفاء شرط معين.</p>
+            <pre><code id="code-loops">
+# استخدام حلقات for
+for i in range(5):
+    print(i)
+
+# استخدام حلقات while
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+            </code></pre>
+            <button class="copy-btn" data-target="code-loops">نسخ الكود</button>
         </section>
-        <section>
-            <h2>الأزرار المخصصة</h2>
-            <div class="buttons-container">
-                <button class="btn1"><a href="https://drive.usercontent.google.com/download?id=1MZctzQvBpuWFUmL4U47DXSrSHocnTQNK&export=download&authuser=0">تطبيق مترجم</a></button>
-                <button class="btn2"><a href="https://drive.usercontent.google.com/download?id=1FPkNoPPV73bzuZLsJ1KDtzWMq154r6RR&export=download&authuser=0">زيادة</></button>
-                <button class="btn3">زر 3</button>
-                <button class="btn4">زر 4</button>
-                <button class="btn5">زر 5</button>
-                <button class="btn6">زر 6</button>
-                <button class="btn7">زر 7</button>
-                <button class="btn8">زر 8</button>
-                <button class="btn9">زر 9</button>
-                <button class="btn10">زر 10</button>
-            </div>
+
+        <section class="content-section">
+            <h2>الدوال</h2>
+            <p>الدوال هي عبارة عن كتلة من الكود يمكن استدعاؤها لتنفيذ مهمة معينة.</p>
+            <pre><code id="code-functions">
+# تعريف دالة
+def greet(name):
+    return "مرحبا، " + name
+
+# استدعاء الدالة
+print(greet("أحمد"))
+            </code></pre>
+            <button class="copy-btn" data-target="code-functions">نسخ الكود</button>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 موقعي البسيط. جميع الحقوق محفوظة.</p>
-    </footer>
+
+        <section class="content-section">
+            <h2>قواميس</h2>
+            <p>القواميس هي بنية بيانات تخزن أزواج المفتاح والقيمة.</p>
+            <pre><code id="code-dictionaries">
+# إنشاء قاموس
+student = {
+    "name": "أحمد",
+    "age": 21,
+    "grades": [90, 85, 88]
+}
+
+# الوصول إلى عناصر القاموس
+print(student["name"])
+print(student["grades"])
+            </code></pre>
+            <button class="copy-btn" data-target="code-dictionaries">نسخ الكود</button>
+        </section>
+
+        <!-- إضافة 50 قسمًا إضافيًا -->
+        <section class="content-section">
+            <h2>مثال 1: استخدام القوائم</h2>
+            <p>القوائم هي بنية بيانات يمكنها تخزين عناصر متعددة في متغير واحد.</p>
+            <pre><code id="code-example1">
+# إنشاء قائمة
+my_list = [1, 2, 3, 4, 5]
+
+# طباعة القائمة
+print(my_list)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example1">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 2: التعامل مع النصوص</h2>
+            <p>التعامل مع النصوص يمكن أن يشمل دمج النصوص، تقسيمها، والتحقق من وجود أنماط معينة.</p>
+            <pre><code id="code-example2">
+# دمج النصوص
+str1 = "مرحباً"
+str2 = " بالعالم"
+full_str = str1 + str2
+
+# طباعة النص الكامل
+print(full_str)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example2">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 3: إنشاء دالة تجمع بين قيمتين</h2>
+            <p>يمكنك إنشاء دالة تقوم بعمليات حسابية مختلفة، مثل الجمع بين قيمتين.</p>
+            <pre><code id="code-example3">
+# تعريف دالة تجمع بين قيمتين
+def add(a, b):
+    return a + b
+
+# استدعاء الدالة
+result = add(5, 3)
+print(result)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example3">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 4: استخدام الحلقات مع القواميس</h2>
+            <p>يمكنك استخدام الحلقات للوصول إلى عناصر القاموس.</p>
+            <pre><code id="code-example4">
+# إنشاء قاموس
+person = {
+    "name": "أحمد",
+    "age": 25,
+    "city": "القاهرة"
+}
+
+# استخدام حلقة للوصول إلى عناصر القاموس
+for key, value in person.items():
+    print(f"{key}: {value}")
+            </code></pre>
+            <button class="copy-btn" data-target="code-example4">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 5: استخدام try و except</h2>
+            <p>تستخدم try و except للتعامل مع الأخطاء في بايثون.</p>
+            <pre><code id="code-example5">
+# التعامل مع الأخطاء
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("لا يمكن القسمة على الصفر!")
+            </code></pre>
+            <button class="copy-btn" data-target="code-example5">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 6: استخدام وحدات بايثون القياسية</h2>
+            <p>بايثون تحتوي على مكتبات قياسية يمكنك استخدامها مثل وحدة time.</p>
+            <pre><code id="code-example6">
+import time
+
+# الحصول على الوقت الحالي
+current_time = time.ctime()
+print("الوقت الحالي:", current_time)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example6">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 7: استخدام المكتبات الخارجية</h2>
+            <p>يمكنك استخدام مكتبات خارجية مثل numpy للحسابات العلمية.</p>
+            <pre><code id="code-example7">
+import numpy as np
+
+# إنشاء مصفوفة
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example7">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 8: قراءة الملفات</h2>
+            <p>يمكنك قراءة محتويات ملف باستخدام بايثون.</p>
+            <pre><code id="code-example8">
+# قراءة ملف
+with open('example.txt', 'r') as file:
+    content = file.read()
+
+print(content)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example8">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 9: كتابة الملفات</h2>
+            <p>يمكنك كتابة البيانات إلى ملف باستخدام بايثون.</p>
+            <pre><code id="code-example9">
+# كتابة إلى ملف
+with open('output.txt', 'w') as file:
+    file.write('مرحبا بالعالم!')
+
+print("تمت الكتابة إلى الملف بنجاح.")
+            </code></pre>
+            <button class="copy-btn" data-target="code-example9">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 10: التعامل مع JSON</h2>
+            <p>يمكنك تحويل البيانات إلى صيغة JSON والعكس باستخدام مكتبة json.</p>
+            <pre><code id="code-example10">
+import json
+
+# تحويل قاموس إلى JSON
+person = {
+    "name": "أحمد",
+    "age": 25,
+    "city": "القاهرة"
+}
+# تحويل قاموس إلى JSON
+person_json = json.dumps(person)
+
+# تحويل JSON إلى قاموس
+person_dict = json.loads(person_json)
+
+print(person_json)
+print(person_dict)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example10">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 11: استخدام list comprehensions</h2>
+            <p>list comprehensions هي طريقة مختصرة لإنشاء القوائم في بايثون.</p>
+            <pre><code id="code-example11">
+# إنشاء قائمة من مربعات الأرقام
+squares = [x**2 for x in range(10)]
+print(squares)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example11">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 12: استخدام lambda functions</h2>
+            <p>lambda functions هي دوال صغيرة بدون اسم تستخدم لمرة واحدة.</p>
+            <pre><code id="code-example12">
+# استخدام lambda function
+add = lambda a, b: a + b
+print(add(3, 5))
+            </code></pre>
+            <button class="copy-btn" data-target="code-example12">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 13: استخدام map و filter</h2>
+            <p>map و filter تستخدم لتطبيق دالة على مجموعة بيانات.</p>
+            <pre><code id="code-example13">
+# استخدام map
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = list(map(lambda x: x**2, numbers))
+print(squared_numbers)
+
+# استخدام filter
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example13">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 14: استخدام enumerate</h2>
+            <p>enumerate يستخدم لإرجاع عداد وعناصر المجموعة.</p>
+            <pre><code id="code-example14">
+# استخدام enumerate
+names = ["أحمد", "محمد", "سارة"]
+for index, name in enumerate(names):
+    print(index, name)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example14">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 15: استخدام zip</h2>
+            <p>zip يستخدم لدمج قوائم متعددة في قائمة واحدة من الأزواج.</p>
+            <pre><code id="code-example15">
+# استخدام zip
+names = ["أحمد", "محمد", "سارة"]
+ages = [25, 30, 22]
+combined = list(zip(names, ages))
+print(combined)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example15">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 16: استخدام counter من collections</h2>
+            <p>counter هي أداة لعد العناصر في مجموعة بيانات.</p>
+            <pre><code id="code-example16">
+from collections import Counter
+
+# عد العناصر في القائمة
+numbers = [1, 2, 2, 3, 3, 3]
+counter = Counter(numbers)
+print(counter)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example16">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 17: استخدام deque من collections</h2>
+            <p>deque هي قائمة مزدوجة النهاية تتيح إضافة وحذف العناصر من كلا الطرفين.</p>
+            <pre><code id="code-example17">
+from collections import deque
+
+# إنشاء deque
+d = deque([1, 2, 3, 4, 5])
+d.append(6)
+d.appendleft(0)
+print(d)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example17">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 18: استخدام namedtuple من collections</h2>
+            <p>namedtuple هي فئة تُستخدم لإنشاء كائنات مشابهة للقواميس.</p>
+            <pre><code id="code-example18">
+from collections import namedtuple
+
+# إنشاء namedtuple
+Point = namedtuple('Point', 'x y')
+p = Point(10, 20)
+print(p.x, p.y)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example18">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 19: استخدام defaultdict من collections</h2>
+            <p>defaultdict هي فئة مشابهة للقواميس لكن مع قيم افتراضية.</p>
+            <pre><code id="code-example19">
+from collections import defaultdict
+
+# إنشاء defaultdict
+d = defaultdict(int)
+d['a'] += 1
+print(d)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example19">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 20: استخدام OrderedDict من collections</h2>
+            <p>OrderedDict هي فئة مشابهة للقواميس لكنها تحتفظ بترتيب العناصر.</p>
+            <pre><code id="code-example20">
+from collections import OrderedDict
+
+# إنشاء OrderedDict
+d = OrderedDict()
+d['a'] = 1
+d['b'] = 2
+d['c'] = 3
+print(d)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example20">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 21: استخدام itertools</h2>
+            <p>itertools هي مكتبة تحتوي على أدوات للتعامل مع المجموعات بشكل متكرر.</p>
+            <pre><code id="code-example21">
+import itertools
+
+# إنشاء قائمة من الأرقام
+numbers = [1, 2, 3]
+
+# إنشاء جميع التباديل الممكنة
+permutations = list(itertools.permutations(numbers))
+print(permutations)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example21">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 22: استخدام functools</h2>
+            <p>functools هي مكتبة تحتوي على أدوات لتعديل الدوال.</p>
+            <pre><code id="code-example22">
+from functools import lru_cache
+
+# استخدام lru_cache لتخزين النتائج المؤقتة
+@lru_cache(maxsize=None)
+def fibonacci(n):
+    if n < 2:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+print(fibonacci(10))
+            </code></pre>
+            <button class="copy-btn" data-target="code-example22">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 23: استخدام argparse</h2>
+            <p>argparse هي مكتبة لتفسير مدخلات سطر الأوامر.</p>
+            <pre><code id="code-example23">
+import argparse
+
+# إعداد المفسر
+parser = argparse.ArgumentParser(description="برنامج بسيط")
+parser.add_argument('name', type=str, help='اسم المستخدم')
+
+# تفسير المدخلات
+args = parser.parse_args()
+print(f"مرحبا، {args.name}")
+            </code></pre>
+            <button class="copy-btn" data-target="code-example23">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 24: استخدام dataclasses</h2>
+            <p>dataclasses هي فئة تُستخدم لتبسيط إنشاء الكائنات.</p>
+            <pre><code id="code-example24">
+from dataclasses import dataclass
+
+# تعريف dataclass
+@dataclass
+class Person:
+    name: str
+    age: int
+
+# إنشاء كائن
+p = Person("أحمد", 30)
+print(p)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example24">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 25: استخدام asyncio</h2>
+            <p>asyncio هي مكتبة لتنفيذ العمليات غير المتزامنة.</p>
+            <pre><code id="code-example25">
+import asyncio
+
+# تعريف دالة غير متزامنة
+async def greet():
+    print("مرحبا بالعالم!")
+    await asyncio.sleep(1)
+    print("مرحباً مرة أخرى!")
+
+# تشغيل الدالة
+asyncio.run(greet())
+            </code></pre>
+            <button class="copy-btn" data-target="code-example25">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 26: استخدام subprocess</h2>
+            <p>subprocess هي مكتبة لتنفيذ الأوامر النظامية داخل بايثون.</p>
+            <pre><code id="code-example26">
+import subprocess
+
+# تنفيذ أمر نظامي
+result = subprocess.run(['echo', 'مرحبا بالعالم!'], capture_output=True, text=True)
+print(result.stdout)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example26">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 27: استخدام logging</h2>
+            <p>logging هي مكتبة لتسجيل رسائل التسجيل في البرامج.</p>
+            <pre><code id="code-example27">
+import logging
+
+# إعداد logging
+logging.basicConfig(level=logging.INFO)
+logging.info('هذه رسالة تسجيل.')
+            </code></pre>
+            <button class="copy-btn" data-target="code-example27">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 28: استخدام configparser</h2>
+            <p>configparser هي مكتبة لقراءة ملفات التهيئة.</p>
+            <pre><code id="code-example28">
+import configparser
+
+# قراءة ملف التهيئة
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+# الوصول إلى قيم التهيئة
+print(config['DEFAULT']['ServerAliveInterval'])
+            </code></pre>
+            <button class="copy-btn" data-target="code-example28">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 29: استخدام csv</h2>
+            <p>csv هي مكتبة للتعامل مع ملفات CSV.</p>
+            <pre><code id="code-example29">
+import csv
+
+# قراءة ملف CSV
+with open('data.csv', mode='r') as file:
+    csv_reader = csv.reader(file)
+    for row in csv_reader:
+        print(row)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example29">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 30: استخدام random</h2>
+            <p>random هي مكتبة لتوليد الأرقام العشوائية.</p>
+            <pre><code id="code-example30">
+import random
+
+# توليد رقم عشوائي
+random_number = random.randint(1, 10)
+print(random_number)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example30">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 31: استخدام time</h2>
+            <p>time هي مكتبة للتعامل مع الوقت والتاريخ.</p>
+            <pre><code id="code-example31">
+import time
+
+# الحصول على الوقت الحالي
+current_time = time.ctime()
+print(current_time)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example31">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 32: استخدام datetime</h2>
+            <p>datetime هي مكتبة للتعامل مع التواريخ والأوقات.</p>
+            <pre><code id="code-example32">
+import datetime
+
+# الحصول على التاريخ والوقت الحالي
+now = datetime.datetime.now()
+print(now)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example32">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 33: استخدام os</h2>
+            <p>os هي مكتبة للتعامل مع نظام التشغيل.</p>
+            <pre><code id="code-example33">
+import os
+
+# الحصول على اسم الدليل الحالي
+current_directory = os.getcwd()
+print(current_directory)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example33">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 34: استخدام shutil</h2>
+            <p>shutil هي مكتبة للتعامل مع عمليات الملفات.</p>
+            <pre><code id="code-example34">
+import shutil
+
+# نسخ ملف
+shutil.copy('source.txt', 'destination.txt')
+print("تم نسخ الملف بنجاح.")
+            </code></pre>
+            <button class="copy-btn" data-target="code-example34">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 35: استخدام re</h2>
+            <p>re هي مكتبة للتعامل مع التعبيرات العادية.</p>
+            <pre><code id="code-example35">
+import re
+
+# البحث عن نمط في النص
+pattern = r'\d+'
+text = "العمر: 25"
+match = re.search(pattern, text)
+print(match.group())
+            </code></pre>
+            <button class="copy-btn" data-target="code-example35">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 36: استخدام threading</h2>
+            <p>threading هي مكتبة لتنفيذ العمليات المتعددة.</p>
+            <pre><code id="code-example36">
+import threading
+
+# تعريف دالة تقوم بمهمة
+def print_numbers():
+    for i in range(5):
+        print(i)
+
+# إنشاء وتشغيل خيط
+thread = threading.Thread(target=print_numbers)
+thread.start()
+thread.join()
+            </code></pre>
+            <button class="copy-btn" data-target="code-example36">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 37: استخدام multiprocessing</h2>
+            <p>multiprocessing هي مكتبة لتنفيذ العمليات المتعددة باستخدام معالجات متعددة.</p>
+            <pre><code id="code-example37">
+import multiprocessing
+
+# تعريف دالة تقوم بمهمة
+def print_numbers():
+    for i in range(5):
+        print(i)
+
+# إنشاء وتشغيل عملية
+process = multiprocessing.Process(target=print_numbers)
+process.start()
+process.join()
+            </code></pre>
+            <button class="copy-btn" data-target="code-example37">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 38: استخدام sqlite3</h2>
+            <p>sqlite3 هي مكتبة للتعامل مع قواعد بيانات SQLite.</p>
+            <pre><code id="code-example38">
+import sqlite3
+
+# إنشاء اتصال بقاعدة البيانات
+conn = sqlite3.connect('example.db')
+c = conn.cursor()
+
+# إنشاء جدول
+c.execute('''CREATE TABLE IF NOT EXISTS students (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)''')
+
+# إدخال بيانات
+c.execute("INSERT INTO students (name, age) VALUES ('أحمد', 21)")
+
+# قراءة البيانات
+c.execute("SELECT * FROM students")
+print(c.fetchall())
+
+# إغلاق الاتصال
+conn.close()
+            </code></pre>
+            <button class="copy-btn" data-target="code-example38">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 39: استخدام smtplib</h2>
+            <p>smtplib هي مكتبة لإرسال البريد الإلكتروني.</p>
+            <pre><code id="code-example39">
+import smtplib
+
+# إعدادات البريد الإلكتروني
+sender = 'your_email@example.com'
+receiver = 'receiver_email@example.com'
+password = 'your_password'
+message = """\
+Subject: اختبار
+مرحباً، هذا اختبار."""
+
+# إرسال البريد الإلكتروني
+with smtplib.SMTP_SSL('smtp.example.com', 465) as server:
+    server.login(sender, password)
+    server.sendmail(sender, receiver, message)
+
+print("تم إرسال البريد الإلكتروني بنجاح.")
+            </code></pre>
+            <button class="copy-btn" data-target="code-example39">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 40: استخدام requests</h2>
+            <p>requests هي مكتبة لإجراء طلبات HTTP.</p>
+            <pre><code id="code-example40">
+import requests
+
+# إجراء طلب GET
+response = requests.get('https://api.example.com/data')
+print(response.json())
+            </code></pre>
+            <button class="copy-btn" data-target="code-example40">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 41: استخدام BeautifulSoup</h2>
+            <p>BeautifulSoup هي مكتبة لتحليل واستخراج البيانات من HTML و XML.</p>
+            <pre><code id="code-example41">
+from bs4 import BeautifulSoup
+
+# قراءة وتحليل HTML
+html_doc = """
+<html>
+<head><title>اختبار</title></head>
+<body>
+<p class="title"><b>مرحباً بالعالم!</b></p>
+</body>
+</html>
+"""
+soup = BeautifulSoup(html_doc, 'html.parser')
+print(soup.title.string)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example41">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 42: استخدام pandas</h2>
+            <p>pandas هي مكتبة لتحليل البيانات ومعالجتها.</p>
+            <pre><code id="code-example42">
+import pandas as pd
+
+# إنشاء DataFrame
+data = {'اسم': ['أحمد', 'محمد', 'سارة'], 'عمر': [21, 30, 22]}
+df = pd.DataFrame(data)
+print(df)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example42">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 43: استخدام numpy</h2>
+            <p>numpy هي مكتبة للتعامل مع العمليات الرياضية والمصفوفات.</p>
+            <pre><code id="code-example43">
+import numpy as np
+
+# إنشاء مصفوفة
+array = np.array([1, 2, 3, 4, 5])
+print(array)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example43">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 44: استخدام matplotlib</h2>
+            <p>matplotlib هي مكتبة لإنشاء الرسوم البيانية.</p>
+            <pre><code id="code-example44">
+import matplotlib.pyplot as plt
+
+# إنشاء بيانات
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+# رسم البيانات
+plt.plot(x, y)
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.title('رسم بياني بسيط')
+plt.show()
+            </code></pre>
+            <button class="copy-btn" data-target="code-example44">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 45: استخدام seaborn</h2>
+            <p>seaborn هي مكتبة لإنشاء الرسوم البيانية والإحصائية.</p>
+            <pre><code id="code-example45">
+import seaborn as sns
+import pandas as pd
+
+# إنشاء بيانات
+data = pd.DataFrame({'X': [1, 2, 3, 4, 5], 'Y': [1, 4, 9, 16, 25]})
+
+# رسم البيانات
+sns.lineplot(x='X', y='Y', data=data)
+plt.title('رسم بياني باستخدام Seaborn')
+plt.show()
+            </code></pre>
+            <button class="copy-btn" data-target="code-example45">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 46: استخدام sklearn</h2>
+            <p>sklearn هي مكتبة للتعلم الآلي.</p>
+            <pre><code id="code-example46">
+from sklearn.linear_model import LinearRegression
+import numpy as np
+
+# إنشاء بيانات التدريب
+X = np.array([[1], [2], [3], [4], [5]])
+y = np.array([1, 4, 9, 16, 25])
+
+# إنشاء نموذج
+model = LinearRegression()
+model.fit(X, y)
+
+# التنبؤ
+prediction = model.predict(np.array([[6]]))
+print(prediction)
+            </code></pre>
+            <button class="copy-btn" data-target="code-example46">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 47: استخدام tensorflow</h2>
+            <p>tensorflow هي مكتبة للتعلم العميق.</p>
+            <pre><code id="code-example47">
+import tensorflow as tf
+
+# إنشاء نموذج بسيط
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(10, activation='relu'),
+    tf.keras.layers.Dense(1)
+])
+
+# تجميع النموذج
+model.compile(optimizer='adam', loss='mean_squared_error')
+
+# عرض ملخص النموذج
+model.summary()
+            </code></pre>
+            <button class="copy-btn" data-target="code-example47">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 48: استخدام keras</h2>
+            <p>keras هي مكتبة لإنشاء نماذج التعلم العميق بسهولة.</p>
+            <pre><code id="code-example48">
+from keras.models import Sequential
+from keras.layers import Dense
+
+# إنشاء نموذج بسيط
+model = Sequential()
+model.add(Dense(10, activation='relu', input_dim=1))
+model.add(Dense(1))
+
+# تجميع النموذج
+model.compile(optimizer='adam', loss='mean_squared_error')
+
+# عرض ملخص النموذج
+model.summary()
+            </code></pre>
+            <button class="copy-btn" data-target="code-example48">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 49: استخدام PIL</h2>
+            <p>PIL هي مكتبة لمعالجة الصور.</p>
+            <pre><code id="code-example49">
+from PIL import Image
+
+# فتح صورة
+image = Image.open('example.jpg')
+
+# عرض الصورة
+image.show()
+            </code></pre>
+            <button class="copy-btn" data-target="code-example49">نسخ الكود</button>
+        </section>
+
+        <section class="content-section">
+            <h2>مثال 50: استخدام opencv</h2>
+            <p>opencv هي مكتبة لمعالجة الصور والفيديو.</p>
+            <pre><code id="code-example50">
+import cv2
+
+# قراءة صورة
+image = cv2.imread('example.jpg')
+
+# عرض الصورة
+cv2.imshow('صورة', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+            </code></pre>
+            <button class="copy-btn" data-target="code-example50">نسخ الكود</button>
+        </section>
+    </div>
+        <script src="scripts.js"></script>
 </body>
 </html>
