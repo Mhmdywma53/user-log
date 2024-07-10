@@ -2,8 +2,6 @@
             font-size: 24px;
             cursor: pointer;
         }
-.dark-mode .theme-icon{
-	class:fas fa-sun;
 }
 header {
     width: 100%;
@@ -128,4 +126,7 @@ code {
 
 .copy-btn:hover {
     background-color: #f4f4f4;
+}
+.dark-mode .copy-btn:hover {
+    background-color: #444444;
 }
