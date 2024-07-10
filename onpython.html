@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Online Python Compiler</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="description" content="Online Python Compiler - The best online Python compiler and editor which allows you to write Python Code, Compile and Execute it online from your browser itself. You can create Python Project using Python version Python v3.6.2.  You can also Edit, Save, Compile, Run and Share Python Code online.">
+<meta property="og:image" content="https://www.tutorialspoint.com/images/tp_logo_436.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="436">
+<meta property="og:image:height" content="228">
+<meta property="og:title" content="Online Python Compiler">
+<meta property="og:description" content="Online Python Compiler - The best online Python compiler and editor which allows you to write Python Code, Compile and Execute it online from your browser itself. You can create Python Project using Python version Python v3.6.2.  You can also Edit, Save, Compile, Run and Share Python Code online.">
+<base href="https://www.tutorialspoint.com">
+<link rel="icon" href="https://www.tutorialspoint.com/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="stylesheet" type="text/css" href="https://www.tutorialspoint.com/themes/easyui/gray/easyui.css">
+<link rel="stylesheet" type="text/css" href="https://www.tutorialspoint.com/cg/style.css?v=106">
+</head>
+<body class="body easyui-layout" id="cc" style="visibility:hidden;">
+<div id="sign" class="easyui-window" title="Coding Ground" data-options="iconCls:'icon-login',modal:true, maximizable:false, closed:true, minimizable:false" style="width:530px;height:475px;padding:10px;"></div>
+<div class="north" id="north" data-options="region:'north'">
+   <a href="codingground.htm"><img src="/cg/images/logo.png" alt="Online Python Compiler" class="logo" id="logo"></a>
+   <h1 class="title" id="main-title">Online Python Compiler</h1>
+   <span id="edit-title"><a href="javascript:void(0);" class="easyui-linkbutton" onclick="setProjectTitle()" data-options="plain:true,iconCls:'fal fa-edit'" style="float:right"></a></span>
+   <div class="easyui-panel main-menu" id="main-menu" data-options="border:false">
+   <a id="login" onclick="openLogin();" href="javascript:void(0);" class="right-align easyui-linkbutton" data-options="iconCls:'fal fa-sign-in fa-lg', plain:true">Login</a>
+   <a id="logout" href="javascript:void(0);" class="right-align display-none easyui-menubutton" data-options="menu:'#mm1', iconCls:'fal fa-sign-out fa-lg'">Logout</a>
+   <a id="setting" href="javascript:void(0);" class="right-align easyui-menubutton" data-options="menu:'#mm3',iconCls:'fal fa-cog fa-lg'">Setting</a>
+   <a id="edit" href="javascript:void(0);" class="right-align easyui-menubutton" data-options="menu:'#mm2',iconCls:'fal fa-pen-to-square fa-lg'">Edit</a>
+   <a id="project" href="javascript:void(0);" class="right-align easyui-menubutton" data-options="menu:'#mm4', plain:true, iconCls:'fal fa-grid-2 fa-lg'">Project</a>
+   <a id="compilers" href="javascript:void(0);" class="right-align easyui-menubutton" data-options="menu:'#mm5', plain:true, iconCls:'fal fa-gear-complex-code fa-lg'">Compilers</a>
+   <a id="tutorial" target="_blank" href="/python/index.htm" class="right-align easyui-linkbutton" data-options="plain:true, iconCls:'fal fa-book fa-lg'">Learn Python</a>
+  </div>
+</div>
+<div data-options="region:'west',split:true" id="west" style="width:45%;"><!--CODE AREA STARTS -->
+<div class="easyui-tabs" data-options="fit:true,border:false,tools:'#tab-tools',toolPosition:'left'" id="codebox" style="width:40%;">
+<div title="Source Code" id="editor"># Online Python-3 Compiler (Interpreter)
+print (&quot;Hello, World!&quot;)</div>
+<div title="Help" id="help" data-options="icon:'fal fa-circle-question fa-lg'">
+<p>Try this <b>Online Python Compiler (Version Python v3.6.2)</b> to Edit, Run, and Share your Python Code online directly from your browser. This Online Compiler provides you the comfort to edit and compile your Python code using latest version Python v3.6.2.</p>
+<h2>How to use Online Python Compiler?</h2>
+<h3>Write and Execute Code</h3>
+<ul>
+<li>Write your program (or, paste it) directly under the "Source Code" tab.</li>
+<li>If you want to save your program, go to the "Project" menu and save it.</li>
+<li>You can directly execute your program without saving it and just by clicking on "Execute" button.</li>
+</ul>
+<h3>How to Enter User Input?</h3>
+<p>The latest version of <b>Online Python Compiler</b> allows to provide program input at run time from the terminal window exactly the same way as you run your program at your own computer. So simply run a program and provide your program input (if any) from the terminal window available in the right side.</p>
+<h2>Keyboard Shortcuts</h2>
+<p>The following are the keyword shortcut of our editor:</p>
+<table id="machelp" style="width:100%;">
+<tr><th>Shortcut</th><th>Description</th></tr>
+<tr><td style="width:20%">&#8984; + Enter</td><td>Run the program</td></tr>
+<tr><td style="width:20%">&#8984; + S</td><td>Save Project (Login Required)</td></tr>
+<tr><td style="width:20%">&#8679; + &#8984; + S</td><td>Save As Project</td></tr>
+<tr><td style="width:20%">&#8984; + P</td><td>New Project</td></tr>
+<tr><td style="width:20%">&#8984; + G</td><td>Share Project</td></tr>
+<tr><td style="width:20%">&#8984; + Z</td><td>Undo Editing</td></tr>
+<tr><td style="width:20%">&#8984; + Y</td><td>Redo Editing</td></tr>
+<tr><td style="width:20%">&#8984; + A</td><td>Select All Text</td></tr>
+<tr><td style="width:20%">&#8984; + X</td><td>Cut Selected Text</td></tr>
+<tr><td style="width:20%">&#8984; + C</td><td>Copy Selected Text</td></tr>
+<tr><td style="width:20%">&#8984; + V</td><td>Paste Copied Text</td></tr>
+<tr><td style="width:20%">&#8984; + F</td><td>Search Text</td></tr>
+<tr><td style="width:20%">&#8984; + &#8997; + F</td><td>Replace Text</td></tr>
+</table>
+<table id="winhelp" style="width:100%;">
+<tr><th>Shortcut</th><th>Description</th></tr>
+<tr><td style="width:20%">Ctrl + Enter</td><td>Run the program</td></tr>
+<tr><td style="width:20%">Ctrl + S</td><td>Save Project</td></tr>
+<tr><td style="width:20%">Shift + Ctrl + S</td><td>Save As Project</td></tr>
+<tr><td style="width:20%">Ctrl + G</td><td>Share Project</td></tr>
+<tr><td style="width:20%">Ctrl + Z</td><td>Undo Editing</td></tr>
+<tr><td style="width:20%">Ctrl + Y</td><td>Redo Editing</td></tr>
+<tr><td style="width:20%">Ctrl + A</td><td>Select All Text</td></tr>
+<tr><td style="width:20%">Ctrl + X</td><td>Cut Selected Text</td></tr>
+<tr><td style="width:20%">Ctrl + C</td><td>Copy Selected Text</td></tr>
+<tr><td style="width:20%">Ctrl + V</td><td>Paste Copied Text</td></tr>
+<tr><td style="width:20%">Ctrl + F</td><td>Search Text</td></tr>
+<tr><td style="width:20%">Ctrl + H</td><td>Replace Text</td></tr>
+</table>
+<h2>Save and Share Project Code</h2>
+<h3>Save Python Project Online</h3>
+<p>You can save your Python Project with us so that you can access this project later on. To save a project you will need to create a login Id with us. So before you save a project, please create a login Id using a link given at the top right corner of this page.</p>
+
+<h3>Share Python Project Online</h3>
+<p>You can use this feature to share your Python Code with your teachers, classmates and colleagues. Just click <b>Share</b> Button and it will create a short link, which can be shared through Email, WhatsApp or even through Social Media.  A shared link will be deleted if it has been passive for almost 3 months.</p>
+
+<h2>More Features of the Editor</h2>
+<ul>
+<li><strong>Theme</strong> &ndash; You can change the current editor's theme from the "Editor Theme" option under "Settings" menu. </li>
+<li><strong>Font Size</strong> &ndash; You can change the font size of the editor/compiler from the "Font Size" option under "Settings" menu.</li>
+<li><strong>Tab Size</strong> &ndash; You can change the tab size from the "Tab Size" option under "Settings" Menu.</li>
+<li><strong>Show/Hide Line Numbers</strong> &ndash; You can show/hide the line number with the code from the "Show Line Numbers" or "Hide Line Numbers" option under "Settings" Menu.</li>
+<li>And, many more.</li>
+</ul>
+<h2>Why to use Online Python Compiler?</h2>
+<p>There are several benefits of using the Online Python Compiler to run your Python code:</p>
+<ul>
+<li>Platform independence: You can run your code from any device without taking care of operating systems.</li>
+<li>Convenience: You don't need to install anything for using this.</li>
+<li>No setup required: There is no need for additional setup to run your code.</li>
+<li>Updated version: Our online compiler/editors/terminals are the latest up-to-date.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="tab-tools" style="border-top:0px; border-right:0px;">
+<a href="javascript:void(0)" id="execute"  class="easyui-linkbutton" data-options="plain:true,iconCls:'fal fa-gears fa-lg'" style="white-space:nowrap;">&nbsp;<b>Execute</b></a>
+<span style="white-space:nowrap;" class="execute_space" id="space1">|</span>
+<a href="javascript:void(0)" id="beautify"  class="easyui-linkbutton" data-options="plain:true,iconCls:'fal fa-display-code fa-lg'" style="white-space:nowrap;">&nbsp;<b>Beautify</b></a>
+<span style="white-space:nowrap;" class="execute_space" id="space2">|</span>
+<a href="javascript:void(0)" id="share"  onclick="generateShareLink()" class="easyui-linkbutton" data-options="plain:true,iconCls:'fal fa-share-nodes fa-lg'" style="white-space:nowrap;"><b>Share</b></a>
+</div>
+<!-- CENTER STARTS -->
+<div id="center" data-options="region:'center',iconCls:'fal fa-rectangle-terminal fa-sm', title:'Terminal', split:true, tools:[{iconCls:'icon-clean', handler:function(){clearTerminal()}}]" style="width:45%;border-bottom: 0px;">
+<div class="easyui-accordion" id="accordion" style="width:100%;height:100%;border:0px;">
+<div id="terminal"></div>
+<iframe id="result" style="height:100%; width:100%; border:0px;"></iframe>
+</div>
+</div><!--CENTER ENDS -->
+<!--EAST STARTS -->
+<div id="east" data-options="region:'east', title:'&nbsp;&nbsp;&nbsp;&nbsp;Advertisement', collapsible:false" style="overflow: hidden; width: 122px">
+<div id="d5686fb9-4489-48e0-9f5b-5691c7936f83" class="_ap_apex_ad">
+<script>
+var adpushup = window.adpushup = window.adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("d5686fb9-4489-48e0-9f5b-5691c7936f83");
+});
+</script>
+</div>
+</div>
+<!--EAST ENDS -->
+<div id="south" data-options="region:'south',collapsible:true, split:true, tools:[{ iconCls:'icon-h-terminal', handler:function(){setTerminalMode('V')}}, {iconCls:'icon-clean', handler:function(){clearTerminal()}}]" style="height:0%;">
+</div><!--SOUTH ENDS -->
+<div id="mm1" style="width:150px;">
+<div onclick="getProjects()"  data-options="iconCls:'fal fa-grid-2 fa-sm'">My Projects</div>
+<div class="menu-sep"></div>
+<div onclick="openChangePassword()" data-options="iconCls:'fal fa-lock-keyhole fa-sm'">Change Password</div>
+<div onclick="userProfile()" data-options="iconCls:'fal fa-user fa-sm'">My Profile</div>
+<div class="menu-sep"></div>
+<div onclick="userLogout()" data-options="iconCls:'fal fa-sign-out fa-sm'">Logout</div>
+</div>
+<div id="mm2" style="width:200px;">
+<div id="undo" data-options="iconCls:'fal fa-rotate-left fa-sm'">Undo</div>
+<div id="redo" data-options="iconCls:'fal fa-rotate-right fa-sm'">Redo</div>
+<div class="menu-sep"></div>
+<div id="cut" data-options="iconCls:'fal fa-scissors fa-sm'">Cut</div>
+<div id="copy" data-options="iconCls:'fal fa-clone fa-sm'">Copy</div>
+<div id="paste" data-options="iconCls:'fal fa-paste fa-sm'">Paste</div>
+<div id="delete" data-options="iconCls:'fal fa-trash fa-sm'">Delete</div>
+<div id="select" data-options="iconCls:'fal fa-check fa-sm'">Select All</div>
+<div class="menu-sep"></div>
+<div id="find" data-options="iconCls:'fal fa-magnifying-glass fa-sm'">Find</div>
+<div id="findreplace" data-options="iconCls:'fal fa-magnifying-glass fa-sm'">Find and Replace</div>
+</div>
+<div id="mm3" style="width:200px;">
+<div id="editor-theme" data-options="iconCls:'fal fa-input-text fa-sm'"><span>Editor Theme</span>
+<div>
+<div onclick="setEditorTheme('crimson_editor');">Crimson</div>
+<div onclick="setEditorTheme('eclipse');">Eclipse</div>
+<div onclick="setEditorTheme('github');">Github</div>
+<div onclick="setEditorTheme('solarized_dark');">Solarized</div>
+<div onclick="setEditorTheme('cobalt');">Cobalt</div>
+<div onclick="setEditorTheme('kr_theme');">krTheme</div>
+<div onclick="setEditorTheme('monokai');">Monokai</div>
+<div onclick="setEditorTheme('terminal');">Terminal</div>
+<div onclick="setEditorTheme('textmate');">Textmate</div>
+<div onclick="setEditorTheme('twilight');">Twilight</div>
+<div onclick="setEditorTheme('vibrant_ink');">Vibrant Ink</div>
+</div>
+</div>
+<div id="font-size" data-options="iconCls:'fal fa-text-size fa-sm'"><span>Font Size</span>
+<div>
+<div onclick="setEditorFontSize('8');">8px</div>
+<div onclick="setEditorFontSize('9');">9px</div>
+<div onclick="setEditorFontSize('10');">10px</div>
+<div onclick="setEditorFontSize('11');">11px</div>
+<div onclick="setEditorFontSize('12');">12px</div>
+<div onclick="setEditorFontSize('13');">13px</div>
+<div onclick="setEditorFontSize('14');">14px</div>
+<div onclick="setEditorFontSize('15');">15px</div>
+<div onclick="setEditorFontSize('16');">16px</div>
+<div onclick="setEditorFontSize('17');">17px</div>
+<div onclick="setEditorFontSize('18');">18px</div>
+<div onclick="setEditorFontSize('20');">20px</div>
+<div onclick="setEditorFontSize('22');">22px</div>
+<div onclick="setEditorFontSize('24');">24px</div>
+</div>
+</div>
+<div id="tab-size" data-options="iconCls:'fal fa-arrow-right-to-line fa-sm'"><span>Tab Size</span>
+<div>
+<div onclick="setEditorTabSize('1');">1</div>
+<div onclick="setEditorTabSize('2');">2</div>
+<div onclick="setEditorTabSize('3');">3</div>
+<div onclick="setEditorTabSize('4');">4</div>
+<div onclick="setEditorTabSize('5');">5</div>
+<div onclick="setEditorTabSize('6');">6</div>
+<div onclick="setEditorTabSize('7');">7</div>
+<div onclick="setEditorTabSize('8');">8</div>
+</div>
+</div>
+<div class="menu-sep"></div>
+<div onclick="setEditorInvisible(1);"  data-options="iconCls:'fal fa-eye fa-sm'">Show Invisible</div>
+<div onclick="setEditorInvisible(0);" data-options="iconCls:'fal fa-eye-slash  fa-sm'">Hide Invisible</div>
+<div class="menu-sep"></div>
+<div onclick="setEditorGutter(1);" data-options="iconCls:'fal fa-list-ol fa-sm'">Show Line Numbers</div>
+<div onclick="setEditorGutter(0);" data-options="iconCls:'fal fa-bars fa-sm'">Hide Line Numbers</div>
+<div class="menu-sep"></div>
+<div onclick="setEditorType('ace');"  data-options="iconCls:'fal fa-a fa-sm'">Ace Editor (Default)</div>
+<div onclick="setEditorType('vim');"  data-options="iconCls:'fal fa-v fa-sm'">Vim Editor</div>
+<div onclick="setEditorType('emacs');"  data-options="iconCls:'fal fa-e fa-sm'">Emacs Editor</div>
+</div>
+<div id="mm4" style="width:200px;">
+<div onclick="createProject()" data-options="iconCls:'fal fa-arrow-up-right-from-square fa-sm'"><span>Open New Project</span></div>
+<div onclick="saveProject();" data-options="iconCls:'fal fa-cloud-arrow-down fa-sm'">Save Project</div>
+<div onclick="saveAsNewProject();" data-options="iconCls:'fal fa-cloud-arrow-down fa-sm'">Save As New Project</div>
+<div onclick="generateShareLink();" data-options="iconCls:'fal fa-share-nodes fa-sm'">Share Project</div>
+<div id="searchproject" onclick="openSearchProject();" data-options="iconCls:'fal fa-magnifying-glass fa-sm'">Search Project</div>
+</div>
+<div id="mm5" style="width:200px;">
+<div><a href="/online_java_compiler.php">Online Java Compiler</a></div>
+<div><a href="/online_python_compiler.php">Online Python Compiler</a></div>
+<div><a href="/compile_cpp_online.php">Online C++ Compiler</a></div>
+<div><a href="/online_csharp_compiler.php">Online CSharp Compiler</a></div>
+<div><a href="/online_c_compiler.php">Online C Compiler</a></div>
+<div><a href="/execute_php_online.php">Online PHP Compiler</a></div>
+<div><a href="/execute_r_online.php">Online R Compiler</a></div>
+<div><a href="/execute_numpy_online.php">Online NumPy Compiler</a></div>
+<div><a href="/codingground.htm">More Compilers</a></div>
+</div><!--HEADER ENDS -->
+<script>
+var HOME = "https://www.tutorialspoint.com";
+var langid = "python3";
+var filename = "main.py";
+var mainfile = "main.py";
+var modename = "python";
+var version = "Python v3.6.2";
+var opt = "new";
+var projectid = "";
+var projecttitle = "Online Python Compiler";
+var sessionId = "668eeb8cf27fb";
+var mode = "";
+</script>
+<script src="https://kit.fontawesome.com/d10db5a94a.js" crossorigin="anonymous"></script>
+<script src="https://www.tutorialspoint.com/themes/easyui/jquery.min.js"></script>
+<script src="https://www.tutorialspoint.com/themes/easyui/jquery.easyui.min.js"></script>
+<script src="/cg/libs/ace/src-min/ace.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js"></script>
+<script src="/cg/script-dev.js?v212"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZYNK6DPEV"></script>
+<script>
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+     $("#tutorial").hide();
+     $("#compilers").hide();
+     $("#project").hide();
+     $("#edit").hide();
+     $("#setting").hide();
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GZYNK6DPEV');
+</script>
+</body>
+</html>
